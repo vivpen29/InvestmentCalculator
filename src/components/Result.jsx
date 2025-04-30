@@ -11,7 +11,7 @@ function calculateData (inputData) {
     for (let i = 1; i <= duration; i++) {
         const year = i;
         let invCapital = initialInvestment + (annualInvestment * i);
-        let interestPerYear = (prevYearInvestmentVal * interestRate)/100;
+        let interestPerYear = (prevYearInvestmentVal * interestRate) / 100;
         let totalInterest = prevYearTotalInterest + interestPerYear;
         let invVal = invCapital + totalInterest;
 
